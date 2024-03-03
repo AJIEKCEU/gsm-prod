@@ -247,11 +247,10 @@
               <div class="main__container main-top__body">
                 
                 
-                  <ul class="ribbons  main-top__ribbon">
-                      <li class="ribbons__item ribbons__item--size-s">
-                          <span class="ribbons__caption">в кредит от 4,5%</span>
-                      </li>
-                  </ul>
+                  <span class="ribbon ribbon--size-s ribbon--theme-dark main-top__ribbon">
+                      
+                      <span class="ribbon__caption">в кредит от 4,5%</span>
+                  </span>
                 
                 <div class="main-top__bottom">
                   
@@ -272,7 +271,7 @@
                     </h4>
                   
                   
-                    <a class="btn btn--size-m btn--theme-light" href="#">
+                    <a class="btn btn--size-m btn--theme-gray" href="#">
                       <span class="btn__caption">Консультация</span>
                     </a>
                   
@@ -305,7 +304,7 @@
                             </div>
                         </div>
                         <div id="tab_1" class="picture-gallery__tab js-tabs__tab js-tabs__tab--is-show">
-                            <div class="swiper-container picture-gallery-slider picture-gallery__slider">
+                            <div class="swiper-container picture-gallery-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide picture-gallery-slider__item">
                                         <img class="object-fit" width="1238" height="538" src="local/templates/main/images/temp/img1238x538_1.jpg" alt="">
@@ -324,7 +323,7 @@
                             </div>
                         </div>
                         <div id="tab_2" class="picture-gallery__tab js-tabs__tab">
-                            <div class="swiper-container picture-gallery-slider picture-gallery__slider">
+                            <div class="swiper-container picture-gallery-slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide picture-gallery-slider__item">
                                         <img class="object-fit" width="1238" height="538" src="local/templates/main/images/temp/img1238x538_1.jpg" alt="">
@@ -433,13 +432,11 @@
                         </div>
                       </li>
                       <li class="description__item">
-                        <a class="description__media" data-fancybox href="local/templates/main/images/video.mp4">
-                          <div class="description__video">
-                            <span class="circle  description__circle">
+                        <a class="video  description__media" data-fancybox href="local/templates/main/images/video.mp4">
+                            <img width="578" height="621" src="local/templates/main/images/temp/img578x621_2.jpg" alt="">
+                            <span class="circle  video__play">
                               <svg class="icon icon--size-m circle__icon"><use href="local/templates/main/images/sprite.svg#icon-play"/></svg>
                             </span>
-                            <img src="local/templates/main/images/temp/img578x621_2.jpg" alt="">
-                          </div>
                         </a>
                         <div class="description__info text">
                           <h3>Title 1</h3>
@@ -455,65 +452,68 @@
                     <ul class="catalog">
                         <li class="catalog-element">
                             <a class="catalog-element__link-img" href="#">
-                                <ul class="ribbons  catalog-element__ribbon">
-                                    <li class="ribbons__item ribbons__item--size-s">
-                                        <span class="ribbons__caption">кредит 4,5%</span>
-                                    </li>
-                                </ul>
+                                <span class="catalog-element__ribbons">
+                                    
+                                </span>
                                 <img class="catalog-element__img" src="local/templates/main/images/temp/img426x269_1.jpg" width="426" height="269" alt="">
                             </a>
                             <div class="catalog-element__info">
-                                <h3 class="h3">
-                                    <a class="catalog-element__link" href="#">
-                                        <span class="h3__caption">BYD Dolphin</span>
-                                    </a>
-                                </h3>
+                                <h2 class="h3">
+                                    <a class="catalog-element__link h3__caption" href="#">BYD Dolphin</a>
+                                </h2>
+                                <p class="catalog-element__caption">Комплектация Flagman</p>
                                 <div class="catalog-element__prices">
                                     <div class="catalog-element__price">от 99 000 руб.</div>
                                     
-                                        <div class="catalog-element__price">1999 руб. в месяц</div>
+                                        <div class="catalog-element__price-conversion">1999 руб. в месяц</div>
                                     
                                 </div>
                             </div>
                             
                                 <div class="catalog-element-description catalog-element__description">
                                     <div class="catalog-element-description__item">
-                                        <span>Год выпуска</span>
-                                        <span>2023</span>
+                                        <span>Батарея</span>
+                                        <span>100 кВт</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Цвет</span>
-                                        <span>Коралловый</span>
+                                        <span>Запас хода</span>
+                                        <span>600 км</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Тип привода</span>
-                                        <span>Передний</span>
+                                        <span>Двигатель</span>
+                                        <span>Электро / 82 л.с.</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>КПП</span>
-                                        <span>Автоматическая</span>
+                                        <span>Тип кузова</span>
+                                        <span>Хэтчбек</span>
+                                    </div>
+                                    <div class="catalog-element-description__item">
+                                        <span>Привод</span>
+                                        <span>Полный</span>
                                     </div>
                                 </div>
                             
-                            <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
-                                <span class="btn__caption">Подробнее</span>
-                            </a>
+                            <div class="catalog-element__buttons">
+                                <a class="btn btn--theme-dark btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Запросить предложение</span>
+                                </a>
+                                <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Подробнее</span>
+                                </a>
+                            </div>
                         </li>
                         <li class="catalog-element">
                             <a class="catalog-element__link-img" href="#">
-                                <ul class="ribbons  catalog-element__ribbon">
-                                    <li class="ribbons__item ribbons__item--size-s">
-                                        <span class="ribbons__caption">кредит 4,5%</span>
-                                    </li>
-                                </ul>
+                                <span class="catalog-element__ribbons">
+                                    
+                                </span>
                                 <img class="catalog-element__img" src="local/templates/main/images/temp/img426x269_2.jpg" width="426" height="269" alt="">
                             </a>
                             <div class="catalog-element__info">
-                                <h3 class="h3">
-                                    <a class="catalog-element__link" href="#">
-                                        <span class="h3__caption">BYD Seal</span>
-                                    </a>
-                                </h3>
+                                <h2 class="h3">
+                                    <a class="catalog-element__link h3__caption" href="#">BYD Seal</a>
+                                </h2>
+                                <p class="catalog-element__caption">Комплектация Flagman</p>
                                 <div class="catalog-element__prices">
                                     <div class="catalog-element__price">от 99 000 руб.</div>
                                     
@@ -522,42 +522,48 @@
                             
                                 <div class="catalog-element-description catalog-element__description">
                                     <div class="catalog-element-description__item">
-                                        <span>Год выпуска</span>
-                                        <span>2023</span>
+                                        <span>Батарея</span>
+                                        <span>100 кВт</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Цвет</span>
-                                        <span>Коралловый</span>
+                                        <span>Запас хода</span>
+                                        <span>600 км</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Тип привода</span>
-                                        <span>Передний</span>
+                                        <span>Двигатель</span>
+                                        <span>Электро / 82 л.с.</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>КПП</span>
-                                        <span>Автоматическая</span>
+                                        <span>Тип кузова</span>
+                                        <span>Хэтчбек</span>
+                                    </div>
+                                    <div class="catalog-element-description__item">
+                                        <span>Привод</span>
+                                        <span>Полный</span>
                                     </div>
                                 </div>
                             
-                            <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
-                                <span class="btn__caption">Подробнее</span>
-                            </a>
+                            <div class="catalog-element__buttons">
+                                <a class="btn btn--theme-dark btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Запросить предложение</span>
+                                </a>
+                                <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Подробнее</span>
+                                </a>
+                            </div>
                         </li>
                         <li class="catalog-element">
                             <a class="catalog-element__link-img" href="#">
-                                <ul class="ribbons  catalog-element__ribbon">
-                                    <li class="ribbons__item ribbons__item--size-s">
-                                        <span class="ribbons__caption">кредит 4,5%</span>
-                                    </li>
-                                </ul>
+                                <span class="catalog-element__ribbons">
+                                    
+                                </span>
                                 <img class="catalog-element__img" src="local/templates/main/images/temp/img426x269_3.jpg" width="426" height="269" alt="">
                             </a>
                             <div class="catalog-element__info">
-                                <h3 class="h3">
-                                    <a class="catalog-element__link" href="#">
-                                        <span class="h3__caption">BYD Seagull</span>
-                                    </a>
-                                </h3>
+                                <h2 class="h3">
+                                    <a class="catalog-element__link h3__caption" href="#">BYD Seagull</a>
+                                </h2>
+                                <p class="catalog-element__caption">Комплектация Flagman</p>
                                 <div class="catalog-element__prices">
                                     <div class="catalog-element__price">от 99 000 руб.</div>
                                     
@@ -566,39 +572,71 @@
                             
                                 <div class="catalog-element-description catalog-element__description">
                                     <div class="catalog-element-description__item">
-                                        <span>Год выпуска</span>
-                                        <span>2023</span>
+                                        <span>Батарея</span>
+                                        <span>100 кВт</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Цвет</span>
-                                        <span>Коралловый</span>
+                                        <span>Запас хода</span>
+                                        <span>600 км</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>Тип привода</span>
-                                        <span>Передний</span>
+                                        <span>Двигатель</span>
+                                        <span>Электро / 82 л.с.</span>
                                     </div>
                                     <div class="catalog-element-description__item">
-                                        <span>КПП</span>
-                                        <span>Автоматическая</span>
+                                        <span>Тип кузова</span>
+                                        <span>Хэтчбек</span>
+                                    </div>
+                                    <div class="catalog-element-description__item">
+                                        <span>Привод</span>
+                                        <span>Полный</span>
                                     </div>
                                 </div>
                             
-                            <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
-                                <span class="btn__caption">Подробнее</span>
-                            </a>
+                            <div class="catalog-element__buttons">
+                                <a class="btn btn--theme-dark btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Запросить предложение</span>
+                                </a>
+                                <a class="btn btn--theme-gray btn--size-m btn--block" href="#">
+                                    <span class="btn__caption">Подробнее</span>
+                                </a>
+                            </div>
                         </li>
                     </ul>
+                </section>
+                <section class="section-info background background--theme-dark">
+                    <div class="about-director">
+                        <div class="about-director__media">
+                            <img class="about-director__img" width="425" height="425" src="local/templates/main/images/temp/img425x425_1.jpg" alt="">
+                        </div>
+                        <div class="about-director__info">
+                            <div class="about-director__header">
+                                <h2 class="h2">
+                                    <span class="h2__caption">Иван Ивановов</span>
+                                </h2>
+                                <p class="about-director__post">Директор</p>
+                            </div>
+                            <p>Grand Seven Motors – ваш надежный проводник в мире электромобилей. Мы предоставляем уникальную платформу для приобретения электромобилей от ведущих </p>
+                            <div class="about-director-contacts">
+                                <a class="about-director-contacts__link" href="tel:+375293456789">+375 29 345 67 89</a>
+                                <a class="about-director-contacts__link" href="mailto:info@gms.by">info@gms.by</a>
+                            </div>
+                            <a class="btn btn--size-m btn--theme-dark" href="#">
+                                <span class="btn__caption">Написать в telegram</span> <svg class="icon icon--size-s btn__icon"><use href="local/templates/main/images/sprite.svg#icon-telegram"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </section>
                 <div class="bottom-form">
                     <div class="bottom-form__item">
                         <h2 class="h2">
-                            <span class="h2__caption">Консультация</span>
+                            <span class="h2__caption">Заявка на тест драйв</span>
                         </h2>
                         <p class="bottom-form__text">
                             Тест-драйв нового автомобиля в дилерском центре JAC Атлант-М Боровая – идеальная возможность оценить все достоинства лифтбэка JAC J7 в движении.
                         </p>
                         <form class="form">
-                            <input class="form__field chk" type="text" placeholder="Bмя">
+                            <input class="form__field chk" type="text" placeholder="Имя">
                             <input class="form__field js-phone-mask chk" type="tel" placeholder="Телефон">
                             <textarea class="form__textarea" placeholder="Комментарий, удобное время"></textarea>
                             <button class="btn btn--theme-dark btn--size-m btn--block">
