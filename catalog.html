@@ -270,35 +270,45 @@
                 <div class="section section--size-m background background--theme-light">
                     <form class="form filter">
                         <div class="filter__item">
-                            <select class="js-select-no-search">
-                                <option>Бренд</option>
-                                <option>Zikr</option>
-                                <option>BYD</option>
-                                <option>Tesla</option>
+                            <select class="js-select-no-search js-select-brand">
+                                <option value="0">Бренд</option>
+                                <option value="1">Zikr</option>
+                                <option value="2">BYD</option>
                             </select>
                         </div>
                         <div class="filter__item">
-                            <select class="js-select-no-search">
-                                <option>Модель</option>
-                                <option>Zikr</option>
-                                <option>BYD</option>
-                                <option>Tesla</option>
+                            <select class="js-select-no-search js-select-model" disabled>
+                                <option value="0">Модель</option>
+                                <option value="1-1">001</option>
+                                <option value="1-2">007</option>
+                                <option class="hide" value="2-1">Han</option>
+                                <option class="hide" value="2-2">Dolphin</option>
                             </select>
                         </div>
                         <div class="filter__item">
-                            <select class="js-select-no-search">
+                            <select class="js-select-no-search js-select-equipment" disabled>
                                 <option>Комплектация</option>
-                                <option>Zikr</option>
-                                <option>BYD</option>
-                                <option>Tesla</option>
+                                <option value="1-1-1">Комфорт 001</option>
+                                <option value="1-1-2">Комфорт+ 001</option>
+                                <option value="1-2-1">Комфорт 007</option>
+                                <option value="1-2-2">Комфорт+ 007</option>
+                                <option value="2-1-1">Комфорт Han</option>
+                                <option value="2-1-2">Комфорт+ Han</option>
+                                <option value="2-2-1">Комфорт Dolphin</option>
+                                <option value="2-2-2">Комфорт+ Dolphin</option>
                             </select>
                         </div>
                         <div class="filter__item">
-                            <select class="js-select-no-search">
+                            <select class="js-select-no-search js-select-body" disabled>
                                 <option>Тип кузова</option>
-                                <option>Zikr</option>
-                                <option>BYD</option>
-                                <option>Tesla</option>
+                                <option value="1-1-1-1">Комфорт 001 хэтчбек</option>
+                                <option value="1-1-2-1">Комфорт+ 001 седан</option>
+                                <option value="1-2-1-1">Комфорт 007 хэтчбек</option>
+                                <option value="1-2-2-1">Комфорт+ 007 седан</option>
+                                <option value="2-1-1-1">Комфорт Han хэтчбек</option>
+                                <option value="2-1-2-1">Комфорт+ Han седан</option>
+                                <option value="2-2-1-1">Комфорт Dolphin хэтчбек</option>
+                                <option value="2-2-2-1">Комфорт+ Dolphin седан</option>
                             </select>
                         </div>
                         <div class="filter__item filter__item--prices">
