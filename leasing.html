@@ -244,7 +244,7 @@
 
 
     <div class="main-top main-top--size-m">
-      <img class="main-top__img object-fit" src="local/templates/main/images/temp/img1238x538_1.jpg" alt="Контакты">
+      <img class="main-top__img object-fit" src="local/templates/main/images/temp/img1238x538_1.jpg" alt="Лизинг">
       <div class="main__container main-top__body">
         
         
@@ -259,7 +259,7 @@
             </div>
           
           <h1 class="h1 main-top__title">
-            <span class="h1__caption">Контакты</span>
+            <span class="h1__caption">Лизинг</span>
           </h1>
           
           
@@ -267,92 +267,82 @@
       </div>
     </div>
     <div class="main__container">
-        <section class="section-info background background--theme-dark">
-            <div class="contacts">
-                <div class="contacts__item contacts__item--first">
-                    <h2 class="h2">
-                        <span class="h2__caption">Мы всегда готовы ответить на все ваши вопросы</span>
-                    </h2>
-                    <a class="btn btn--size-m btn--theme-alt contacts__btn" href="#">
-                        <span class="btn__caption">Написать в telegram</span> <svg class="icon icon--size-s btn__icon"><use href="local/templates/main/images/sprite.svg#icon-telegram"/></svg>
-                    </a>
-                </div>
-                <div class="contacts__item contacts__item--second">
-                    <div class="contacts__phones">
-                        <a class="contacts__link" href="mailto:info@gsmotors.by">info@gms.by</a>
-                        <a class="contacts__link" href="tel:+375293509099">+375 29 350 90 99</a>
+        <section class="section-info background background--theme-light">
+            <form class="leasing">
+                <div class="leasing__filter">
+                    <div class="leasing__switches">
+                        <div class="leasing__switch"></div>
                     </div>
-                    <div class="contacts-address contacts__address">
-                        <h3 class="contacts-address__title">Автосалон</h3>
-                        <div class="contacts-address__street">ул. Тимирязева 123/2 ТРЦ “Град”</div>
-                        <div class="contacts-address__time">Пн-вс: 10:00-20:00</div>
+                    <select class="js-select-no-search js-currency">
+                        <option value="0.19" data-currency="BYN">Валюта: BYN</option>
+                        <option value="0.185" data-currency="RUB">Валюта: RUB</option>
+                        <option value="0.115" data-currency="USD">Валюта: USD</option>
+                        <option value="0.125" data-currency="EUR">Валюта: EUR</option>
+                    </select>
+                </div>
+                <div class="leasing-items">
+                    <div class="leasing-items__item">
+                        <div class="leasing-items__info">
+                            <p class="leasing-items__title">Стоимость авто</p>
+                            <div class="leasing-items__value">
+                                <span class="js-range-total">7 000</span>
+                                <span class="js-range-currency">BYN</span>
+                            </div>
+                            </div>
+                        <div class="range-slider">
+                            <div class="range-slider__line js-range" data-min="5000" data-max="200000" data-start="70000" data-model="budget"></div>
+                            <input type="number" class="range-slider__input"/>
+                        </div>
+                        <div class="leasing-items__values">
+                            <span>5 000</span>
+                            <span>200 000</span>
+                        </div>
+                    </div>
+                    <div class="leasing-items__item">
+                        <div class="leasing-items__info">
+                            <p class="leasing-items__title">Первоначальный взнос</p>
+                            <div class="leasing-items__value">
+                                <span class="js-range-total">2</span>
+                                <span class="js-range-currency">BYN</span>
+                            </div>
+                        </div>
+                        <div class="range-slider">
+                            <div class="range-slider__value"></div>
+                            <div class="range-slider__line js-range" data-min="0" data-max="25000" data-start="0"  data-model="advance"></div>
+                            <input type="number" class="range-slider__input"/>
+                        </div>
+                        <div class="leasing-items__values">
+                            <span>0</span>
+                            <span>25 000</span>
+                        </div>
+                    </div>
+                    <div class="leasing-items__item">
+                        <div class="leasing-items__info">
+                            <p class="leasing-items__title">Срок лизинга</p>
+                            <div class="leasing-items__value">
+                                <span class="js-range-total">12</span>
+                                <span>мес.</span>
+                            </div>
+                        </div>
+                        <div class="range-slider">
+                            <div class="range-slider__value"></div>
+                            <div class="range-slider__line js-range" data-min="12" data-max="48" data-start="12" data-model="leaseTerm"></div>
+                            <input type="number" class="range-slider__input"/>
+                        </div>
+                        <div class="leasing-items__values">
+                            <span>12 мес.</span>
+                            <span>48 мес.</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="contacts-map">
-                <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-                <script>
-                    var data = {
-                            "type": "FeatureCollection",
-                            "features": [{
-                                "type": "Feature",
-                                "id": "point_1257",
-                                "geometry": {"type": "Point", "coordinates": ["53.932861", "27.456872"]},
-                                "properties": {
-                                    "hintContent": "Автосалон GSM",
-                                    "balloonContent": "ул. Тимирязева 123/2 ТРЦ “Град"
-                                }
-                            }]
-                        },
-                        ymaps,
-                        objectManager,
-                        myMap;
-
-                    // Инициализировать карту
-                    function init() {
-                        var winWidth = $(window).width();
-
-                        myMap = document.getElementById("map");
-
-                        if (!myMap) return;
-
-                        myMap = new ymaps.Map(myMap, {
-                            center: [53.932861, 27.456872],
-                            zoom: 15,
-                            controls: []
-                        });
-                        objectManager = new ymaps.ObjectManager();
-
-                        myMap.controls.add("zoomControl", {});
-                        myMap.behaviors.disable('scrollZoom');
-
-                        if (winWidth <= 1024) {
-                            myMap.behaviors.disable('drag');
-                        }
-
-                        objectManager.add(data);
-
-                        objectManager.objects.options.set({
-                            iconLayout: "default#image",
-                            iconImageHref: "/local/templates/main/images/marker.svg",
-                            iconImageSize: [36, 45],
-                            iconImageOffset: [-18, -45],
-                            balloonPanelMaxMapArea: 0
-                        });
-                        myMap.geoObjects.add(objectManager);
-
-                        myMap.setBounds(myMap.geoObjects.getBounds(), {
-                            checkZoomRange: true
-                        }).then(function () {
-                            myMap.setZoom(15);
-                        });
-                    }
-
-                    if (ymaps != undefined) ymaps.ready(init);
-
-                </script>
-                <div class="contacts-map__body" id="map"></div>
-            </div>
+                <div class="leasing-sum">
+                    <p class="leasing-sum__text">Ежемесячный платеж*:</p>
+                    <div class="leasing-sum__result">
+                        <span class="leasing-sum__total js-total"></span> <span class="js-range-currency">BYN</span>
+                    </div>
+                </div>
+                <p class="leasing__note">* Предварительный расчёт ежемесячного платежа не является публичной офертой.</p>
+            </form>
         </section>
         <section class="section section--size-m">
             <div class="bottom-form">
@@ -361,7 +351,7 @@
                         <span class="h2__caption">Остались вопросы?</span>
                     </h2>
                     <p class="bottom-form__text">
-                        Тест-драйв нового автомобиля в дилерском центре JAC Атлант-М Боровая – идеальная возможность оценить все достоинства лифтбэка JAC J7 в движении.
+                        Тест-драйв нового автомобиля в дилерском центре JAC Атлант-М Боровая – идеальная возможность оценить все достоинства лифтбэка JAC J7 в движении. 
                     </p>
                     <form class="form">
                         <input class="form__field chk" type="text" placeholder="Имя">
