@@ -29,7 +29,12 @@
                     </a>
                     <a class="socials__link" href="#" target="_blank">
                         <svg class="icon icon--size-m socials__icon">
-                            <use href="local/templates/main/images/sprite.svg#icon-fb"/>
+                            <use href="local/templates/main/images/sprite.svg#icon-telegram"/>
+                        </svg>
+                    </a>
+                    <a class="socials__link" href="#" target="_blank">
+                        <svg class="icon icon--size-m socials__icon">
+                            <use href="local/templates/main/images/sprite.svg#icon-tiktok"/>
                         </svg>
                     </a>
                 </div>
@@ -269,53 +274,53 @@
                         <div class="leasing-items__info">
                             <p class="leasing-items__title">Стоимость авто</p>
                             <div class="leasing-items__value">
-                                <span class="js-range-total">7 000</span>
+                                <input class="js-range-total leasing-items__total" type="number" inputmode="numeric" value="20000" data-model="budget">
                                 <span class="js-range-currency">BYN</span>
                             </div>
                             </div>
                         <div class="range-slider">
-                            <div class="range-slider__line js-range" data-min="5000" data-max="200000" data-start="70000" data-model="budget"></div>
+                            <div class="range-slider__line js-range" data-min="5000" data-max="200000" data-start="20000" data-model="budget"></div>
                             <input type="number" class="range-slider__input"/>
                         </div>
                         <div class="leasing-items__values">
-                            <span>5 000</span>
-                            <span>200 000</span>
+                            <span>5000</span>
+                            <span>200000</span>
                         </div>
                     </div>
                     <div class="leasing-items__item">
                         <div class="leasing-items__info">
                             <p class="leasing-items__title">Первоначальный взнос</p>
                             <div class="leasing-items__value">
-                                <span class="js-range-total">2</span>
+                                <input class="js-range-total leasing-items__total" type="number" value="0" data-model="advance">
                                 <span class="js-range-currency">BYN</span>
                             </div>
                         </div>
                         <div class="range-slider">
                             <div class="range-slider__value"></div>
-                            <div class="range-slider__line js-range" data-min="0" data-max="25000" data-start="0"  data-model="advance"></div>
+                            <div class="range-slider__line js-range" data-min="0" data-max="80000" data-start="0" data-model="advance"></div>
                             <input type="number" class="range-slider__input"/>
                         </div>
                         <div class="leasing-items__values">
                             <span>0</span>
-                            <span>25 000</span>
+                            <span>80000</span>
                         </div>
                     </div>
                     <div class="leasing-items__item">
                         <div class="leasing-items__info">
                             <p class="leasing-items__title">Срок лизинга</p>
                             <div class="leasing-items__value">
-                                <span class="js-range-total">12</span>
+                                <input class="js-range-total leasing-items__total" type="number" value="12" data-model="leaseTerm">
                                 <span>мес.</span>
                             </div>
                         </div>
                         <div class="range-slider">
                             <div class="range-slider__value"></div>
-                            <div class="range-slider__line js-range" data-min="12" data-max="48" data-start="12" data-model="leaseTerm"></div>
+                            <div class="range-slider__line js-range" data-min="12" data-max="60" data-start="12" data-model="leaseTerm"></div>
                             <input type="number" class="range-slider__input"/>
                         </div>
                         <div class="leasing-items__values">
                             <span>12 мес.</span>
-                            <span>48 мес.</span>
+                            <span>60 мес.</span>
                         </div>
                     </div>
                 </div>
@@ -444,11 +449,24 @@
                         </a>
                         <a class="socials__link" href="#" target="_blank">
                             <svg class="icon icon--size-m socials__icon">
-                                <use href="local/templates/main/images/sprite.svg#icon-fb"/>
+                                <use href="local/templates/main/images/sprite.svg#icon-telegram"/>
+                            </svg>
+                        </a>
+                        <a class="socials__link" href="#" target="_blank">
+                            <svg class="icon icon--size-m socials__icon">
+                                <use href="local/templates/main/images/sprite.svg#icon-tiktok"/>
                             </svg>
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="footer__info">
+                <p>Вся информация, представленная на сайте, касающаяся комплектаций, технических характеристик, стоимости автомобилей и т.д. носит информационный характер и не является публичной офертой.</p>
+                <p>Общество с ограниченной ответственностью «Град Севен Моторс»</p>
+                <p>Юридический адрес: г. Минск, ул. Тимирязева, д. 123, корп. 2, 4 этаж, часть нежилого изолированного помещения № 160а</p>
+                <p>УНП: 193696747</p>
+                <p>ОКПО: 507338025000</p>
+                <p>р/с (BYN) BY90ALFA30122D64620010270000 в ЗАО "Альфа-Банк" код ALFABY2X, г. Минск, ул. Сурганова, 43</p>
             </div>
         </div>
     </footer>
